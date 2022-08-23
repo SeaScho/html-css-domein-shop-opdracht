@@ -26,7 +26,7 @@
 body {
     font-family: Poppins, sans-serif;
     color: var(--clr-primary);
-    /*@todo vraag: is dit echt nodig in deze situatie?*/
+    /*@todo gewetensvraag: is dit echt nodig in deze situatie?*/
     overflow-x: hidden;
 }
 
@@ -101,6 +101,7 @@ header {
     border-color: var(--clr-primary);
     border-radius: 0 50px 50px 0;
     outline: none;
+    /*@todo dit moet eigenlijk in een hover-state*/
     cursor: pointer;
     margin-left: -5px;
 }
@@ -171,6 +172,7 @@ header {
     border: 2px solid var(--clr-primary);
     border-radius: 50px;
     outline: none;
+    /*@todo dit moet eigenlijk in een hover-state*/
     cursor: pointer;
 }
 
@@ -191,6 +193,7 @@ header {
 }
 
 .faq__summary {
+    /*@todo dit moet eigenlijk in een hover-state*/
     cursor: pointer;
     margin-bottom: 10px;
 }
@@ -198,7 +201,6 @@ header {
 
 /* Footer section */
 .footer {
-    width: 100%;
     background-color: var(--clr-primary);
     padding-block: var(--m);
 }
