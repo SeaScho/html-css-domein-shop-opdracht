@@ -26,6 +26,7 @@
 body {
     font-family: Poppins, sans-serif;
     color: var(--clr-primary);
+    /*@todo gewetensvraag: is dit echt nodig in deze situatie?*/
     overflow-x: hidden;
 }
 
@@ -54,40 +55,34 @@ main {
 
 /* Set background on header */
 header {
-    background: url('assets/mountains.jpg') no-repeat center -100px local;
+    background: url('assets/mountains.jpg') no-repeat center local;
     background-size: cover;
-    width: 100%;
-    height: 800px;
+    text-align: center;
 }
 
 /* Hero section */
 .hero__section {
     padding: var(--xl);
+    padding-bottom: 400px;
 }
 
 .hero__title {}
 
-.hero__subtitle {
-    margin-bottom: var(--m);
-    text-align: center;
-}
-
-.hero__form {
-    text-align: center;
-}
+.hero__subtitle {}
 
 .hero__input::placeholder {
     color: var(--clr-primary);
     font-size: 18px;
+    /*@todo dit kun je beter oplossen met een lichtere kleur dan dat je dit transparant maakt!*/
     opacity: 0.6;
 }
 
 .hero__input {
+    margin-top: var(--m);
     background-color: transparent;
     color: var(--clr-primary);
     font-size: 18px;
-    padding: var(--xs) var(--m);
-    height: var(--l);
+    padding: var(--s) var(--m);
     width: 350px;
     border-width: 2px 0 2px 2px;
     border-style: solid;
@@ -100,28 +95,29 @@ header {
     background: var(--clr-primary);
     color: var(--clr-secondary);
     font-size: 18px;
-    padding: var(--xs) var(--m);
-    height: var(--l);
+    padding: var(--s) var(--m);
     border-width: 2px 0 2px 2px;
     border-style: solid;
     border-color: var(--clr-primary);
     border-radius: 0 50px 50px 0;
     outline: none;
+    /*@todo dit moet eigenlijk in een hover-state*/
     cursor: pointer;
+    margin-left: -5px;
 }
 
 /* Testimonial section */
 .testimonial__section {
     margin-block: var(--l);
+    position: relative;
 }
 
 .testimonial__title {}
 
 .testimonial__article {
-    padding: var(--l) var(--xl) var(--l) 150px;
+    padding: var(--s) var(--xl) var(--l) 150px;
     margin-block: var(--l);
     border-radius: var(--xs);
-
     /* Shadow */
     box-shadow:
             0 8px 18px 2px rgba(24, 39, 75, 0.12),
@@ -130,31 +126,26 @@ header {
 
 .testimonial__quote {
     position: relative;
+    margin-bottom: var(--s);
 }
 
-.testimonial__quote::before {
-    position: absolute;
-    content: "";
-    top: -10px;
+.testimonial__quote-icon {
+    position: relative;
     left: -50px;
-    width: 33px;
-    height: 33px;
-    background: url('assets/quote-left.png');
+    top: 36px;
 }
 
 .testimonial__avatar {
-    display: inline;
     width: 44px;
     height: 44px;
-    margin-top: var(--s);
+    vertical-align: middle;
 }
 
 .testimonial__name {
     display: inline;
     margin-left: var(--s);
+    font-style: italic;
 }
-
-.testimonial__name em {}
 
 /* Support section */
 .support__section {
@@ -181,6 +172,7 @@ header {
     border: 2px solid var(--clr-primary);
     border-radius: 50px;
     outline: none;
+    /*@todo dit moet eigenlijk in een hover-state*/
     cursor: pointer;
 }
 
@@ -201,6 +193,7 @@ header {
 }
 
 .faq__summary {
+    /*@todo dit moet eigenlijk in een hover-state*/
     cursor: pointer;
     margin-bottom: 10px;
 }
@@ -208,7 +201,6 @@ header {
 
 /* Footer section */
 .footer {
-    width: 100%;
     background-color: var(--clr-primary);
     padding-block: var(--m);
 }
