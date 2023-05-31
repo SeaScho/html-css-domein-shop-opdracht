@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
 /*////////////////////////////////////////////////////////////////////////
 Table of Contents:
     1. Global Styles
@@ -10,17 +12,28 @@ Table of Contents:
         3.5 Footer
 ////////////////////////////////////////////////////////////////////////*/
 
-
+/* kleuren grijs #899CA0 en donkergroen #1C2B32 */
 
 /*////////////////////////
     1. Global Styles
 ////////////////////////*/
+* {
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+}
 
 
 
 /*////////////////////////
     2. Typography
 ////////////////////////*/
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+h1 { font-size: 100px;color: #1C2B32;}
+
 
 
 
@@ -31,6 +44,19 @@ Table of Contents:
 
 
 /*///////////// 3.1 Header /////////////*/
+header {
+    background-image: url("../assets/images/mountains.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.header-content {
+    margin: 0px auto 0px auto;
+    max-width: 1000px;
+    text-align:center;
+    padding:250px;
+}
 
 
 
